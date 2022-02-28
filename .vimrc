@@ -1,5 +1,8 @@
 syntax on
 
+" Setting my leader key
+let mapleader="\<Space>"
+
 " better command-line completion
 set wildmenu
 
@@ -62,3 +65,16 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     call plug#end()
     colorscheme gruvbox
 endif
+
+" Create zettel function
+function! NewZettel()
+    let l:title = input("Zettle Title: ")
+    let l:date = strftime("%Y%m%d%H%M%S")
+    call mkdir(date . "_" . title)
+    call system("touch README.md")
+    call chdir(date . "_" . title)
+    execute("edit README.md")
+endfunction
+
+nmap <leader>n :call NewZettel()<CR>
+
