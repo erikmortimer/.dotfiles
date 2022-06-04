@@ -60,10 +60,11 @@ nmap <F7> :set spell!<CR>
 " enable vim-plug
 if filereadable(expand("~/.vim/autoload/plug.vim"))
     call plug#begin()
-    Plug 'morhetz/gruvbox'
+    "Plug 'morhetz/gruvbox'
     "Plug 'fatih/vim-go', { 'do': 'GoInstallBinaries' }
+    "Plug ''
     call plug#end()
-    colorscheme gruvbox
+    "colorscheme gruvbox
 endif
 
 " Create zettel function
@@ -71,8 +72,8 @@ function! NewZettel()
     let l:title = input("Zettle Title: ")
     let l:date = strftime("%Y%m%d%H%M%S")
     call mkdir(date . "_" . title)
-    call system("touch README.md")
     call chdir(date . "_" . title)
+    call system("touch README.md")
     execute("edit README.md")
 endfunction
 
