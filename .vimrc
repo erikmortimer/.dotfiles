@@ -62,7 +62,8 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
     call plug#begin()
     "Plug 'morhetz/gruvbox'
     "Plug 'fatih/vim-go', { 'do': 'GoInstallBinaries' }
-    "Plug ''
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
     call plug#end()
     "colorscheme gruvbox
 endif
