@@ -5,4 +5,5 @@ local inoremap = Remap.inoremap
 local xnoremap = Remap.xnoremap
 local nmap = Remap.nmap
 
+nnoremap("<leader>x", ":!chmod +x %<CR>")
 inoremap("<C-c>", "<Esc>")
