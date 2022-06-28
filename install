@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-pushd $DOTFILES
+pushd $HOME/.dotfiles
 stowFolders=("bin" "nvim" "tmux" "bash")
 
 for folder in ${stowFolders[@]}; do
