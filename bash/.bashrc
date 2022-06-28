@@ -15,6 +15,7 @@ alias h='history'
 alias ll='ls -la --color=auto'
 alias ls='ls --color=auto'
 alias df='df -h'
+alias vim='nvim'
 
 # Prompt definition
 PROMPT_AT=@
@@ -36,3 +37,6 @@ bash_prompt(){
 }
 
 PROMPT_COMMAND="bash_prompt"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+. "$HOME/.cargo/env"
