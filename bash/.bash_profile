@@ -7,8 +7,8 @@ export GOPATH=$HOME/go
 
 # Adding to the path
 export PATH=$HOME/.local/go/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
-export PATH=$DOTFILES/scripts:$PATH
 if [[ $OSTYPE == 'darwin'* ]]; then
     export PATH=/opt/homebrew/bin/:$PATH
 fi
