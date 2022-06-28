@@ -14,7 +14,7 @@ if [[ $OSTYPE == 'darwin'* ]]; then
 fi
 
 # Keybindings bby
-bind -x '"\C-f":"./goto"'
+bind -x '"\C-f":"tmux-session"'
 
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
