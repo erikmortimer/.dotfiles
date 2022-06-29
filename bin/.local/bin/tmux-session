@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-session=$(find ~ ~/repos -mindepth 1 -maxdepth 1 -type d | fzf)
+session=$(find ~ ~/dev ~/dev/repos -mindepth 1 -maxdepth 1 -type d | fzf)
 session_name=$(basename "$session" | tr . _)
 
 # "2> /dev/null" means pipe to null (i.e. garbage can)
