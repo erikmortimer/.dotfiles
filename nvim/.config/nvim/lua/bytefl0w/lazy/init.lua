@@ -4,7 +4,7 @@ return {
         "nvim-lua/plenary.nvim",
 	name = "plenary"
     },
-    { "github/copilot.vim" },
+    "github/copilot.vim",
     -- { "eandrju/cellular-automation.nvim" },
-    { "ThePrimeagen/harpoon" },
+    "ThePrimeagen/harpoon",
 }

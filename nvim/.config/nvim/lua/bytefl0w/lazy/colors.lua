@@ -8,24 +8,22 @@ function ColorTheScreen(color)
 end
 
 return {
-    {
-        "folke/tokyonight.nvim",
-	config = function()
-	    require("tokyonight").setup({
-                style = "storm",
-		transparent = "true",
-		terminal_colors = true,
-		styles = {
-		    -- Style to be applied to different syntax groups
-		    comments = { italic = false },
-		    keywords = { italic = false },
-		    -- Background styles. Can be dark, transparent, or normal
-		    sidebars = "dark",
-		    floats = "dark",
-		},
-	    })
-	    ColorTheScreen()
-	end
-    },
+    "folke/tokyonight.nvim",
+    config = function()
+	require("tokyonight").setup({
+            style = "storm",
+	    transparent = "true",
+	    terminal_colors = true,
+	    styles = {
+		-- Style to be applied to different syntax groups
+		comments = { italic = false },
+		keywords = { italic = false },
+		-- Background styles. Can be dark, transparent, or normal
+		sidebars = "dark",
+		floats = "dark",
+	    },
+	})
+	ColorTheScreen()
+    end
 }
 
