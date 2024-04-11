@@ -67,7 +67,7 @@ return {
                 { name = 'buffer' },
             })
         })
-        vim.diagnostics.config({
+        vim.diagnostic.config({
             update_in_insert = true,
             float = {
                 focusable = false,
