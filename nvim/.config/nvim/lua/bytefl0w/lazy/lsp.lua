@@ -20,7 +20,6 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "clangd",
-                "pyright",
                 "tflint",
                 "gopls",
                 "zls"
@@ -38,6 +37,17 @@ return {
                                 diagnostics = {
                                     globals = { "vim" }
                                 }
+                            }
+                        }
+                    }
+                end,
+
+                ["zls"] = function()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.zls.setup {
+                        settings = {
+                            zig = {
+                                path = '$ZIG'
                             }
                         }
                     }
