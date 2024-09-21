@@ -4,3 +4,6 @@ dwm/*.o
 dwm/config.h
 dwm/dwm
 dwmblocks/dwmblocks
+slock/slock
+slock/config.h
+slock/*.o

@@ -69,6 +69,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *firefoxcmd[] = { "firefox", NULL };
 static const char *gimpcmd[] = { "gimp", NULL };
 static const char *flameshotcmd[] = { "flameshot", "gui", NULL };
+static const char *lockscreencmd[] = { "slock", NULL };
 
 #define STATUSBAR "dwmblocks"
 
@@ -79,6 +80,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_f,                       spawn,          {.v = firefoxcmd } },
 	{ MODKEY|ShiftMask,             XK_g,                       spawn,          {.v = gimpcmd } },
 	{ MODKEY|ShiftMask,             XK_s,                       spawn,          {.v = flameshotcmd } },
+	{ MODKEY|ShiftMask,             XK_l,                       spawn,          {.v = lockscreencmd } },
 	{ MODKEY,                       XK_b,                       togglebar,      {0} },
 	{ MODKEY,                       XK_j,                       focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,                       focusstack,     {.i = -1 } },
