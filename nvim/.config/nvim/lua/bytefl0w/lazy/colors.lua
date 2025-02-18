@@ -1,5 +1,5 @@
 function ColorTheScreen(color)
-    color = color or "tokyonight"
+    color = color or "gruvbox"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -8,21 +8,8 @@ function ColorTheScreen(color)
 end
 
 return {
-    "folke/tokyonight.nvim",
+    "morhetz/gruvbox",
     config = function()
-	require("tokyonight").setup({
-            style = "storm",
-	    transparent = "true",
-	    terminal_colors = true,
-	    styles = {
-		-- Style to be applied to different syntax groups
-		comments = { italic = false },
-		keywords = { italic = false },
-		-- Background styles. Can be dark, transparent, or normal
-		sidebars = "dark",
-		floats = "dark",
-	    },
-	})
 	ColorTheScreen()
     end
 }

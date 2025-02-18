@@ -7,3 +7,4 @@ dwmblocks/dwmblocks
 slock/slock
 slock/config.h
 slock/*.o
+ghostty/
